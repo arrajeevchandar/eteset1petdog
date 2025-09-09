@@ -6,7 +6,7 @@ export default function BreedList({ breeds, onSelect, onEdit, onDelete }) {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 items-center ">
       {breeds.map((breed) => (
-        <div key={breed.id} className="bg-white p-4 shadow rounded-lg  ">
+        <div key={breed.id} className="bg-white p-4 shadow rounded-lg ">
           <h3 className="text-lg font-bold">{breed.name}</h3>
           <div className="mt-2 flex gap-2 items-stretch ">
             <button

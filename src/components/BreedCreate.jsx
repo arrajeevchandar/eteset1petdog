@@ -17,7 +17,7 @@ export default function BreedCreate({ onCreate }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white p-4 shadow-md rounded-lg mb-6 max-w-md mx-auto"
+      className="bg-green-500 p-4 shadow-md rounded-lg mb-6 max-w-md mx-auto "
     >
       <h2 className="text-xl font-semibold mb-4">Add Dog Breed</h2>
       <input
@@ -25,21 +25,21 @@ export default function BreedCreate({ onCreate }) {
         placeholder="Breed Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="w-full p-2 border rounded mb-2"
+        className="bg-white w-full p-2 border rounded mb-2"
       />
       <input
         type="text"
         placeholder="Origin"
         value={origin}
         onChange={(e) => setOrigin(e.target.value)}
-        className="w-full p-2 border rounded mb-2"
+        className=" bg-white w-full p-2 border rounded mb-2"
       />
       <input
         type="text"
         placeholder="Size (Small/Medium/Large)"
         value={size}
         onChange={(e) => setSize(e.target.value)}
-        className="w-full p-2 border rounded mb-2"
+        className=" bg-white w-full p-2 border rounded mb-2"
       />
       <button
         type="submit"

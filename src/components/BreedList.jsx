@@ -4,15 +4,13 @@ export default function BreedList({ breeds, onSelect, onEdit, onDelete }) {
   }
 
   return (
-    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 items-center ">
       {breeds.map((breed) => (
-        <div key={breed.id} className="bg-white p-4 shadow rounded-lg">
+        <div key={breed.id} className="bg-white p-4 shadow rounded-lg  ">
           <h3 className="text-lg font-bold">{breed.name}</h3>
-          <p className="text-sm text-gray-600">Origin: {breed.origin}</p>
-          <p className="text-sm text-gray-600">Size: {breed.size}</p>
-          <div className="mt-2 flex gap-2">
+          <div className="mt-2 flex gap-2 items-stretch ">
             <button
-              className="px-3 py-1 bg-green-500 text-white rounded"
+              className="px-3 py-1 bg-green-500 text-white rounded "
               onClick={() => onSelect(breed)}
             >
               View
